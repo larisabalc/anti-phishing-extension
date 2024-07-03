@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Anti-Phishing Cross-Browser Extension",
+    "description": "A cross-browser extension that detects phishing URLs and emails using AI.",
+    "version": "1.0",
+    "icons": {
+        "128": "icons/logo.png"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "tabs",
+        "activeTab",
+        "contextMenus",
+        "webRequest"
+    ],
+    "host_permissions": [
+        "http://localhost:9999/"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Detection Extension</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <span class="navbar-brand mb-0 h1"><img class="logo" src="icons/logo.png">Phishing Detection Extension</span>
+    </nav>
+    <div class="container mt-4" id="main-content">
+        <p class="warning"><i class="fas fa-exclamation-triangle"></i> WARNING: Beware of phishing attempts!</p>
+        <p class="white-text">Select an option for analysis:</p>
+        <div class="row">
+            <div class="col-md-6">
+                <button class="btn btn-primary btn-block" id="analyze-url-btn">Analyze URLs</button>
+            </div>
+            <div class="col-md-6">
+                <button class="btn btn-primary btn-block" id="analyze-email-btn">Analyze Emails</button>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-4 d-none" id="analyze-url-page">
+        <p class="title text-center">URL Analysis Page</p>
+        <p class="warning"><i class="fas fa-exclamation-triangle"></i> Stay alert for spoofed sites post URL access!</p>
+        <p class="warning"><i class="fas fa-exclamation-triangle"></i> Double-check authenticity; use HTTPS!</p>
+        <p class="warning" style="padding-bottom: 15px;"><i class="fas fa-exclamation-triangle"></i> Avoid entering sensitive information if unsure!</p>
+        <div id="react-target-url"></div>
+    </div>
+    <div class="container mt-4 d-none" id="analyze-email-page">
+        <p class="title text-center">Email Analysis Page</p>
+        <p class="warning"><i class="fas fa-exclamation-triangle"></i> Be alert for suspiciously attractive offers!</p>
+        <p class="warning"><i class="fas fa-exclamation-triangle"></i> Right-click to check URL safety before accessing!</p>
+        <div id="react-target-email"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
