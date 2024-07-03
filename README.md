@@ -12,9 +12,9 @@ Enables users to perform detailed analyses of URLs via the right-click context m
 
 ### 3. **🌐 Cross-Browser Compatibility**
 Designed for use across different browsers, ensuring accessibility and protection regardless of user preference. Compatible with:
-   - **Google Chrome** 
-   - **Microsoft Edge** 
-   - **Opera** 
+   - **Google Chrome** ✅
+   - **Microsoft Edge** ✅
+   - **Opera** ✅
 
 ### 4. **❗ Report False Positives**
 Users can report incorrect analyses, helping to optimize AI models and enhance the extension's effectiveness against evolving phishing tactics.
