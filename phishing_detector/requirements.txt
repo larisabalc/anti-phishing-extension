@@ -11,3 +11,4 @@ tensorflow_intel==2.16.1
 torch==2.3.0
 transformers==4.41.0
 websockets==12.0
+urllib3>=2.6.0 # not directly required, pinned by Snyk to avoid a vulnerability
